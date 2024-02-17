@@ -5,3 +5,8 @@ venv
 data
 data_1
 models
+pretrained_models
+test*
+artifacts
+
+backups
