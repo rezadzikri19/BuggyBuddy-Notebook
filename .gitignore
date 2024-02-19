@@ -2,8 +2,7 @@
 venv
 
 # Raw data files
-data
-data_1
+data*
 models
 pretrained_models
 test*
