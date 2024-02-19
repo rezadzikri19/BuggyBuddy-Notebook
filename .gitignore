@@ -3,9 +3,10 @@ venv
 
 # Raw data files
 data*
-models
+models*
 pretrained_models
 test*
 artifacts
 
 backups
+citations
