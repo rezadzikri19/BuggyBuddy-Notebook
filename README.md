@@ -4,7 +4,7 @@ The BuggyBuddy Notebook is a crucial component of the BuggyBuddy project, servin
 
 ## Data Sources
 
-This project utilizes Firefox bug report data sourced via [Bugzilla API](). The dataset comprises structured information such as bug `id`, `duplicates`, `summary`, `description`, `status`, `resolution`, `platform`, `product`, `type`, `priority`, `severity`, `component`.
+This project utilizes Firefox bug report data sourced via [Bugzilla API](https://bmo.readthedocs.io/en/latest/api/core/v1/bug.html#get-bug). The dataset comprises structured information such as bug `id`, `duplicates`, `summary`, `description`, `status`, `resolution`, `platform`, `product`, `type`, `priority`, `severity`, `component`.
 
 ## Data Preprocessing
 
