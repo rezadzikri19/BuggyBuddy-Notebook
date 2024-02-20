@@ -1,6 +1,6 @@
-# Bug Report Recommendation System [BuggyBuddy]
+# 🪲 BuggyBuddy Notebook
 
-BuggyBuddy is an end-to-end data science project aimed at detecting duplicated bug reports and providing recommendations to users for similar bug reports, thereby facilitating faster problem resolution in software development.
+BuggyBuddy is an end-to-end data science project aimed at performing similarity search through a bug report database to assist users/operators in identifying duplicate bug reports. This facilitates faster problem resolution in software development.
 
 ## Data Sources
 
@@ -46,7 +46,7 @@ flowchart LR;
 
 ## Models Used
 
-The model used is a Siamese network trained to detect whether two texts are the same (duplicate) or not. The model takes two inputs (embedded text) which are then transformed using a dense/fully connected layer (256 nodes) to produce a vector. The similarity of the vectors is then calculated, and finally, a single dense node with sigmoid activation is used for binary classification.
+The model used is a Siamese network trained to detect whether two texts are the same (duplicate) or not. The model takes two inputs (embedded text) which are then transformed using a *Dense (fully connected)* layer (256 nodes) to produce a vector. The similarity of the vectors is then calculated using *Normalized Dot Layer*, and finally, a *Single Dense Node* with sigmoid activation is used to provide the output of the predicted similarity score.
 
 ```mermaid
 flowchart LR;
@@ -93,7 +93,7 @@ flowchart LR;
     output_layer --> result
 ```
 
-When used for embedding, only the first layer (fully connected) is utilized to produce the vector, which can then be used for similarity search.
+In the context of similarity search, *we only utilize the Dense Layer as the projection layer to generate vectors* that can be used for similarity search.
 
 ## Code Structure
 
@@ -109,9 +109,10 @@ The BuggyBuddy project is organized as follows:
 **Duplicate Bug Detection:**
 
 - Successfully created duplicated bug reports with the following metric scores:
-  - Precision: 0.995
-  - Recall: 1.000
+  - Precision: `0.92835`
+  - Recall: `0.90968`
+  - F1 Score: `0.91892`
 
 **Similarity Search:**
 
-- Utilizing [FAISS](https://github.com/facebookresearch/faiss) for testing the performance of similarity search, successfully provided recommendations for similar bug reports with a recall@10 of 0.3301.
+- Utilizing [faiss](https://github.com/facebookresearch/faiss) for testing the performance of similarity search, successfully provided recommendations for similar bug reports with a recall@10 of `0.3301`.

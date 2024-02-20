@@ -1,0 +1,11 @@
+pandas
+numpy
+requests
+matplotlib
+nltk
+scikit-learn
+sentence_transformers
+gensim
+tensorflow
+faiss-cpu
+imbalanced-learn
