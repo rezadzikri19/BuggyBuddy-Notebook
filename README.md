@@ -1,6 +1,6 @@
 # 📒 BuggyBuddy Notebook
 
-BuggyBuddy Notebook is a crucial component of the BuggyBuddy project, serving as the core for data analysis and deep learning model exploration that underpins the entire BuggyBuddy project. BuggyBuddy Notebook contains a comprehensive analysis, ranging from Exploratory Data Analysis (EDA), feature engineering, and data preprocessing to model training and evaluation.
+BuggyBuddy Notebook is a crucial component of the [BuggyBuddy](https://github.com/rezadzikri19/BuggyBuddy) project, serving as the core for data analysis and deep learning model exploration that underpins the entire BuggyBuddy project. BuggyBuddy Notebook contains a comprehensive analysis, ranging from Exploratory Data Analysis (EDA), feature engineering, and data preprocessing to model training and evaluation.
 
 ## Data Sources
 
